@@ -39,6 +39,7 @@ RUN mkdir /docker-entrypoint-initdb.d
 RUN apt-get update && apt-get install -y --no-install-recommends \
 		apt-transport-https ca-certificates \
 		pwgen \
+		pv \
 	&& rm -rf /var/lib/apt/lists/*
 
 ENV GPG_KEYS \
